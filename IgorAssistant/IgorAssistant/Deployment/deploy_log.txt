@@ -1,0 +1,680 @@
+{
+  "error": null,
+  "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Resources/deployments/deployment_dry_run",
+  "name": "deployment_dry_run",
+  "properties": {
+    "correlationId": "59aa7a9f-56fb-4abf-846a-9d01ba9ea614",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/serverfarms/VirtualAssistantIgor-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-3dvcfcl",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/sites/VirtualAssistantIgor-3dvcfcl",
+        "resourceGroup": "VirtualAssistantIgor",
+        "resourceName": "VirtualAssistantIgor-3dvcfcl",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Insights/components/VirtualAssistantIgor-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-3dvcfcl",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.BotService/botServices/VirtualAssistantIgor-3dvcfcl",
+        "resourceGroup": "VirtualAssistantIgor",
+        "resourceName": "VirtualAssistantIgor-3dvcfcl",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/Sites/VirtualAssistantIgor-qnahost-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-qnahost-3dvcfcl",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Search/searchServices/virtualassistantigor-search-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "virtualassistantigor-search-3dvcfcl",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/microsoft.insights/components/VirtualAssistantIgor-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-3dvcfcl",
+            "resourceType": "microsoft.insights/components"
+          }
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.CognitiveServices/accounts/VirtualAssistantIgor-qna-3dvcfcl",
+        "resourceGroup": "VirtualAssistantIgor",
+        "resourceName": "VirtualAssistantIgor-qna-3dvcfcl",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/serverFarms/VirtualAssistantIgor-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-3dvcfcl",
+            "resourceType": "Microsoft.Web/serverFarms"
+          }
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/sites/VirtualAssistantIgor-qnahost-3dvcfcl",
+        "resourceGroup": "VirtualAssistantIgor",
+        "resourceName": "VirtualAssistantIgor-qnahost-3dvcfcl",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/Sites/VirtualAssistantIgor-qnahost-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-qnahost-3dvcfcl",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Insights/components/VirtualAssistantIgor-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-3dvcfcl",
+            "resourceType": "Microsoft.Insights/components"
+          },
+          {
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Search/searchServices/virtualassistantigor-search-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "virtualassistantigor-search-3dvcfcl",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "actionName": "listAdminKeys",
+            "apiVersion": "2015-08-19",
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Search/searchServices/virtualassistantigor-search-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "virtualassistantigor-search-3dvcfcl",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "apiVersion": "2015-05-01",
+            "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Insights/components/VirtualAssistantIgor-3dvcfcl",
+            "resourceGroup": "VirtualAssistantIgor",
+            "resourceName": "VirtualAssistantIgor-3dvcfcl",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/sites/VirtualAssistantIgor-qnahost-3dvcfcl/config/appsettings",
+        "resourceGroup": "VirtualAssistantIgor",
+        "resourceName": "VirtualAssistantIgor-qnahost-3dvcfcl/appsettings",
+        "resourceType": "Microsoft.Web/sites/config"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-3dvcfcl"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-3dvcfcl"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-3dvcfcl"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-3dvcfcl"
+      },
+      "contentModeratorLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "contentModeratorName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-cm-3dvcfcl"
+      },
+      "contentModeratorSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-3dvcfcl"
+      },
+      "location": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisServiceName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-luis-3dvcfcl"
+      },
+      "luisServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "f0aabc1c-0e7f-40df-ad9e-3d7a2739b51a"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "igor@bot"
+      },
+      "name": {
+        "type": "String",
+        "value": "VirtualAssistantIgor"
+      },
+      "qnaMakerSearchName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-search-3dvcfcl"
+      },
+      "qnaMakerSearchSku": {
+        "type": "String",
+        "value": "standard"
+      },
+      "qnaMakerServiceName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-qna-3dvcfcl"
+      },
+      "qnaMakerServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "qnaMakerWebAppName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-qnahost-3dvcfcl"
+      },
+      "qnaServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "VirtualAssistantIgor-3dvcfcl"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "3dvcfcl"
+      },
+      "useContentModerator": {
+        "type": "Bool",
+        "value": true
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/config"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Search",
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "locations": [
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "searchServices"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "11085197991200807332",
+    "templateLink": null,
+    "timestamp": "2019-09-11T22:22:58.243537+00:00",
+    "validatedResources": [
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Resources/deployments/3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "name": "3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "properties": {
+          "mode": "Incremental",
+          "template": {
+            "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "resources": []
+          }
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "type": "Microsoft.Resources/deployments"
+      },
+      {
+        "apiVersion": "2015-04-08",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.DocumentDB/databaseAccounts/virtualassistantigor-3dvcfcl",
+        "kind": "GlobalDocumentDB",
+        "location": "westus",
+        "name": "virtualassistantigor-3dvcfcl",
+        "properties": {
+          "databaseAccountOfferType": "Standard",
+          "locations": [
+            {
+              "failoverPriority": 0,
+              "locationName": "westus"
+            }
+          ]
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "type": "Microsoft.DocumentDB/databaseAccounts"
+      },
+      {
+        "apiVersion": "2018-07-01",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Storage/storageAccounts/virtualassistantigor3dvc",
+        "kind": "StorageV2",
+        "location": "westus",
+        "name": "virtualassistantigor3dvc",
+        "resourceGroup": "VirtualAssistantIgor",
+        "sku": {
+          "name": "Standard_LRS"
+        },
+        "type": "Microsoft.Storage/storageAccounts"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/serverFarms/VirtualAssistantIgor-3dvcfcl",
+        "location": "westus",
+        "name": "VirtualAssistantIgor-3dvcfcl",
+        "properties": {},
+        "resourceGroup": "VirtualAssistantIgor",
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "type": "Microsoft.Web/serverFarms"
+      },
+      {
+        "apiVersion": "2015-05-01",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Insights/components/VirtualAssistantIgor-3dvcfcl",
+        "kind": "web",
+        "location": "westus",
+        "name": "VirtualAssistantIgor-3dvcfcl",
+        "properties": {
+          "Application_Type": "web"
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "type": "Microsoft.Insights/components"
+      },
+      {
+        "apiVersion": "2018-02-01",
+        "dependsOn": [
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/serverfarms/VirtualAssistantIgor-3dvcfcl"
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/sites/VirtualAssistantIgor-3dvcfcl",
+        "location": "westus",
+        "name": "VirtualAssistantIgor-3dvcfcl",
+        "properties": {
+          "serverFarmId": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/serverfarms/VirtualAssistantIgor-3dvcfcl",
+          "siteConfig": {
+            "appSettings": [
+              {
+                "name": "MicrosoftAppId",
+                "value": "f0aabc1c-0e7f-40df-ad9e-3d7a2739b51a"
+              },
+              {
+                "name": "MicrosoftAppPassword",
+                "value": "igor@bot"
+              }
+            ],
+            "webSocketsEnabled": true
+          }
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2018-07-12",
+        "dependsOn": [
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Insights/components/VirtualAssistantIgor-3dvcfcl"
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.BotService/botServices/VirtualAssistantIgor-3dvcfcl",
+        "kind": "sdk",
+        "location": "global",
+        "name": "VirtualAssistantIgor-3dvcfcl",
+        "properties": {
+          "developerAppInsightKey": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).InstrumentationKey]",
+          "developerAppInsightsApplicationId": "[reference(resourceId('Microsoft.Insights/components', parameters('appInsightsName'))).ApplicationId]",
+          "displayName": "VirtualAssistantIgor-3dvcfcl",
+          "endpoint": "https://virtualassistantigor-3dvcfcl.azurewebsites.net/api/messages",
+          "isStreamingSupported": true,
+          "msaAppId": "f0aabc1c-0e7f-40df-ad9e-3d7a2739b51a"
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "sku": {
+          "name": "S1"
+        },
+        "type": "Microsoft.BotService/botServices"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.CognitiveServices/accounts/VirtualAssistantIgor-cm-3dvcfcl",
+        "kind": "ContentModerator",
+        "location": "westus",
+        "name": "VirtualAssistantIgor-cm-3dvcfcl",
+        "resourceGroup": "VirtualAssistantIgor",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.CognitiveServices/accounts/VirtualAssistantIgor-luis-3dvcfcl",
+        "kind": "LUIS",
+        "location": "westus",
+        "name": "VirtualAssistantIgor-luis-3dvcfcl",
+        "resourceGroup": "VirtualAssistantIgor",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2017-04-18",
+        "dependsOn": [
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/Sites/VirtualAssistantIgor-qnahost-3dvcfcl",
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Search/searchServices/virtualassistantigor-search-3dvcfcl",
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/microsoft.insights/components/VirtualAssistantIgor-3dvcfcl"
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.CognitiveServices/accounts/VirtualAssistantIgor-qna-3dvcfcl",
+        "kind": "QnAMaker",
+        "location": "westus",
+        "name": "VirtualAssistantIgor-qna-3dvcfcl",
+        "properties": {
+          "apiProperties": {
+            "qnaRuntimeEndpoint": "[concat('https://',reference(resourceId('Microsoft.Web/sites', variables('qnaMakerWebAppName'))).hostNames[0])]"
+          }
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "sku": {
+          "name": "S0"
+        },
+        "type": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "apiVersion": "2015-08-19",
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Search/searchServices/virtualassistantigor-search-3dvcfcl",
+        "location": "westus",
+        "name": "virtualassistantigor-search-3dvcfcl",
+        "properties": {
+          "hostingMode": "default",
+          "partitionCount": 1,
+          "replicaCount": 1
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "sku": {
+          "name": "standard"
+        },
+        "type": "Microsoft.Search/searchServices"
+      },
+      {
+        "apiVersion": "2016-08-01",
+        "dependsOn": [
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/serverFarms/VirtualAssistantIgor-3dvcfcl"
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/sites/VirtualAssistantIgor-qnahost-3dvcfcl",
+        "location": "westus",
+        "name": "VirtualAssistantIgor-qnahost-3dvcfcl",
+        "properties": {
+          "enabled": true,
+          "hostingEnvironment": "",
+          "name": "VirtualAssistantIgor-qnahost-3dvcfcl",
+          "serverFarmId": "/subscriptions//subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourcegroups/VirtualAssistantIgor/providers/Microsoft.Web/serverfarms/VirtualAssistantIgor-3dvcfcl",
+          "siteConfig": {
+            "cors": {
+              "allowedOrigins": [
+                "*"
+              ]
+            }
+          }
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "type": "Microsoft.Web/sites"
+      },
+      {
+        "apiVersion": "2016-08-01",
+        "dependsOn": [
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/Sites/VirtualAssistantIgor-qnahost-3dvcfcl",
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Insights/components/VirtualAssistantIgor-3dvcfcl",
+          "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Search/searchServices/virtualassistantigor-search-3dvcfcl"
+        ],
+        "id": "/subscriptions/781ddd0f-1b23-4654-a4fd-0b4761901731/resourceGroups/VirtualAssistantIgor/providers/Microsoft.Web/sites/VirtualAssistantIgor-qnahost-3dvcfcl/config/appsettings",
+        "name": "VirtualAssistantIgor-qnahost-3dvcfcl/appsettings",
+        "properties": {
+          "AzureSearchAdminKey": "[listAdminKeys(resourceId('Microsoft.Search/searchServices/', variables('qnaMakerSearchName')), '2015-08-19').primaryKey]",
+          "AzureSearchName": "virtualassistantigor-search-3dvcfcl",
+          "DefaultAnswer": "No good match found in KB.",
+          "PrimaryEndpointKey": "VirtualAssistantIgor-qnahost-3dvcfcl-PrimaryEndpointKey",
+          "QNAMAKER_EXTENSION_VERSION": "latest",
+          "SecondaryEndpointKey": "VirtualAssistantIgor-qnahost-3dvcfcl-SecondaryEndpointKey",
+          "UserAppInsightsAppId": "[reference(resourceId('Microsoft.Insights/components/', parameters('appInsightsName')), '2015-05-01').AppId]",
+          "UserAppInsightsKey": "[reference(resourceId('Microsoft.Insights/components/', parameters('appInsightsName')), '2015-05-01').InstrumentationKey]",
+          "UserAppInsightsName": "VirtualAssistantIgor-3dvcfcl"
+        },
+        "resourceGroup": "VirtualAssistantIgor",
+        "type": "Microsoft.Web/sites/config"
+      }
+    ]
+  },
+  "resourceGroup": "VirtualAssistantIgor"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "a5279e19-3de9-4fc9-8b94-0acf5ef4ef14"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=virtualassistantigor3dvc;AccountKey=+7RzawLK3HLahUGqDwsO+VLlayZjdbpnPZ+7JmIPBx9eDXFRv18KGg2y90TRk6BZzA1wUJABb3quQnXuNuQWwA==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "VirtualAssistantIgor-3dvcfcl"
+  },
+  "contentModerator": {
+    "type": "Object",
+    "value": {
+      "key": "76b4420d968145488aa1303d47bd66b7"
+    }
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "qwHNK9gs5IFYXmYSUxgk7JxJhlzrGkH1URmRn4tV6A6g1VlAc17i9rutBu2GDDkDhcTO6nY6deKscCVCf060OA==",
+      "collectionId": "botstate-collection",
+      "cosmosDBEndpoint": "https://virtualassistantigor-3dvcfcl.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "VirtualAssistantIgor-luis-3dvcfcl",
+      "key": "3f4e965cd7ff4b698ab72c87b76bbacb",
+      "region": "westus"
+    }
+  },
+  "qnaMaker": {
+    "type": "Object",
+    "value": {
+      "endpoint": "https://virtualassistantigor-qnahost-3dvcfcl.azurewebsites.net",
+      "key": "0018f486b5174c00b286014b837c06f0"
+    }
+  }
+}
